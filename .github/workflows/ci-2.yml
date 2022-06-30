@@ -1,0 +1,78 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@CharlieHuygen 
+CharlieHuygen
+/
+workshop-devops-fe-react
+Public
+forked from sh33dafi/workshop-devops-fe-react
+Code
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+workshop-devops-fe-react/.github/workflows/ci.yml
+
+chuygen CI
+Latest commit 8ebdb54 1 hour ago
+ History
+ 1 contributor
+33 lines (27 sloc)  652 Bytes
+
+name: CI
+
+on:
+  push:
+    branches:
+      - pipeline*
+jobs:
+  build:
+    steps:
+      - name: Build dependencies
+      - run: npm install
+  test:
+    steps:
+      - name: Test application
+      - run: npm test
+
+
+
+# Steps
+# 1. Make sure dependencies are installed
+#   - Optionally cache dependencies
+# 2. Test and lint the application
+#    - This can be run in parallel
+# 3. If the testing and linting succeeds create production distribution
+# 4. Upload the artifacts
+
+# Create a separate workflow to deploy the app or add CD step here
+
+# Useful actions
+# actions/setup-node@v3
+# actions/checkout@v3
+# actions/setup-node@v3
+# actions/upload-artifact@v3
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications
