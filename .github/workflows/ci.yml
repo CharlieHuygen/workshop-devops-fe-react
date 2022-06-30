@@ -4,6 +4,16 @@ on:
   push:
     branches:
       - pipeline*
+jobs:
+  build:
+    steps:
+      - name: Build dependencies
+      - run: npm install
+  test:
+    steps:
+      - name: Test application
+      - run: npm test
+
 
 
 # Steps
