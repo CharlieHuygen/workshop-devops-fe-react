@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@CharlieHuygen 
-CharlieHuygen
-/
-workshop-devops-fe-react
-Public
-forked from sh33dafi/workshop-devops-fe-react
-Code
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-workshop-devops-fe-react/.github/workflows/ci.yml
-
-chuygen CI
-Latest commit 8ebdb54 1 hour ago
- History
- 1 contributor
-33 lines (27 sloc)  652 Bytes
-
 name: CI
 
 on:
